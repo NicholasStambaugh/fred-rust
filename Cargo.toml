@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 fred-rs = "0.1.1"
+clap = "2.33.0"

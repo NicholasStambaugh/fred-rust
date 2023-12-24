@@ -23,7 +23,10 @@ pub fn fetch_and_process_data(series_id: &str) -> Result<(), Box<dyn std::error:
 
     // Process the observations
     for data_point in &resp.observations {
-        println!("Series ID: {}, Date: {}, Value: {}", series_id, data_point.date, data_point.value);
+        println!(
+            "Series ID: {}, Date: {}, Value: {}",
+            series_id, data_point.date, data_point.value
+        );
     }
 
     Ok(())
